@@ -33,3 +33,14 @@
   }
   
   
+@media (max-width: 768px) {
+  .sidebar {
+    width: 10px; 
+  }
+  .button strong {
+    display: none;
+  }
+  .logoutButton  strong{
+    display: none;
+}
+}

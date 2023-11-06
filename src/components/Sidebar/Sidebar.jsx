@@ -12,20 +12,26 @@ const Sidebar = () => {
     <div className={styles.sidebar}>
       <div className={styles.button}>
         <p>
-          <span className={styles.icon} style={iconStyle}><MdCastForEducation /></span>
-          <strong style={iconStyle}>Courses</strong> 
+          <span className={styles.icon} style={iconStyle}>
+            <MdCastForEducation />
+          </span>
+          <strong style={iconStyle}>Courses</strong>
         </p>
       </div>
       <div className={styles.button}>
         <p>
-          <span className={styles.icon} style={iconStyle}><MdSpaceDashboard /></span>
-          <strong style={iconStyle}>Dashboard</strong> 
+          <span className={styles.icon} style={iconStyle}>
+            <MdSpaceDashboard />
+          </span>
+          <strong style={iconStyle}>Dashboard</strong>
         </p>
       </div>
       <div className={styles.logoutButton}>
         <p>
-          <span className={styles.icon} style={iconStyle}><FaPowerOff /></span>
-          <strong style={iconStyle}>Logout</strong> 
+          <span className={styles.icon} style={iconStyle}>
+            <FaPowerOff />
+          </span>
+          <strong style={iconStyle}>Logout</strong>
         </p>
       </div>
     </div>
