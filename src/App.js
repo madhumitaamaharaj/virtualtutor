@@ -1,5 +1,6 @@
 import Head from './components/Head/Head';
 import Sidebar from './components/Sidebar/Sidebar';
+import MidButton from './components/MidButton/MidButton';
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
      <Head/> 
      <Sidebar/>
+     <MidButton/>
     </div>
   );
 }
