@@ -26,7 +26,7 @@ const Sidebar = () => {
           <strong style={iconStyle}>Dashboard</strong>
         </p>
       </div>
-      <div className={styles.logoutButton}>
+      <div className={styles.button}>
         <p>
           <span className={styles.icon} style={iconStyle}>
             <FaPowerOff />
