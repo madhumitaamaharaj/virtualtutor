@@ -6,10 +6,14 @@ import { FaSearch } from 'react-icons/fa';
 import styles from './Head.module.css'; 
 
 const Head = () => {
+  const iconStyle = {
+    color: '#8b1f8b', 
+  };
+
   return (
     <div className={styles.headContainer}>
       <div className={styles.leftIcons}>
-        <GiHamburgerMenu className={styles.icon} /> 
+        <GiHamburgerMenu className={styles.icon} style={iconStyle} /> 
       </div>
 
       <div className={styles.centerIcons}>
@@ -20,14 +24,14 @@ const Head = () => {
           placeholder="Search"
           onChange={(e) => e.target.value}
         />
-        <button className={styles.searchButton}><FaSearch/></button>
+        <button className={styles.searchButton}><FaSearch style={iconStyle} /></button>
       </div>
     </div>
 
       <div className={styles.rightIcons}>
-        <BsBell className={styles.icon} /> 
+        <BsBell className={styles.icon} style={iconStyle} /> 
         <div className={styles.iconSpacing} /> 
-        <FaUserGraduate className={styles.icon} /> 
+        <FaUserGraduate className={styles.icon} style={iconStyle} /> 
       </div>
     </div>
   );
