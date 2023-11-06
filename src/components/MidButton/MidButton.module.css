@@ -4,6 +4,7 @@
     color: #8b1f8b;
     transition: background-color 0.3s;
     border-radius: 10px;
+    font-weight: bold;
   }
   
   .button:hover {
