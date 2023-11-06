@@ -1,8 +1,6 @@
 import React from 'react';
 import { MdCastForEducation, MdSpaceDashboard } from 'react-icons/md';
 import { FaPowerOff } from 'react-icons/fa';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 import styles from './Sidebar.module.css';
 
 const Sidebar = () => {
