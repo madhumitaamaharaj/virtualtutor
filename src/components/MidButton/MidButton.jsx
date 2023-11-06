@@ -7,17 +7,14 @@ const MidButton = () => {
         'All',
         'Technical',
         'Design',
-        'Business',
-        'Language',
-        'Astrology',
-        'Science',
-        'Fine Arts',
-        'Performing Arts'
+        'Dance',
+     
       ];
     
       return (
-        <div>
+        <div className="d-flex justify-content-center flex-wrap">
           {buttonTitles.map((title, index) => (
+            
             <button
               key={index}
               className={`${styles.button} m-2`} 

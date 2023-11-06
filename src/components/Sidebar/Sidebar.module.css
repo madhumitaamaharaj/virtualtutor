@@ -34,12 +34,13 @@
 }
 
 
-
-
 @media (max-width: 768px) {
   .sidebar {
-    width: 20px;
-    margin-right: 20px;
+    width: 60px;
+    
+  }
+  .icon {
+    align-items: flex-start;
   }
 
   .button strong {
@@ -47,4 +48,17 @@
   }
 
 
+}
+@media (max-width: 576px) {
+  .sidebar {
+    width: 60px; 
+  }
+
+  .button {
+    padding: 8px; 
+  }
+
+  .icon {
+    margin-right: 6px; 
+  }
 }
