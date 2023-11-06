@@ -19,13 +19,15 @@
   align-items: center;
   transition: background-color 0.3s; 
   cursor: pointer;
-  border-radius: 5px; 
+ 
   padding: 10px; 
+  
 }
 
 .button:hover {
   background-color: #f8d7f8;
-  
+  width: 150px;
+  border-radius: 20px; 
 }
 
 .icon {
