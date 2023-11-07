@@ -1,3 +1,5 @@
+import React from 'react';
+import { RecoilRoot } from 'recoil'; 
 import Head from './components/Head/Head';
 import Sidebar from './components/Sidebar/Sidebar';
 import MidButton from './components/MidButton/MidButton';
@@ -6,12 +8,14 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-     <Head/> 
-     <MidButton/>   
-     <Sidebar/>
-     <CourseList/>
-    </div>
+    <RecoilRoot> 
+      <div className="App">
+        <Head />
+        <MidButton />
+        <Sidebar />
+        <CourseList />
+      </div>
+    </RecoilRoot>
   );
 }
 
