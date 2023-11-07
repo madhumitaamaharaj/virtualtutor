@@ -11,3 +11,14 @@ export const enrolledStudentsSelector = selector({
     return get(enrolledStudentsState);
   },
 });
+export const coursesState = atom({
+  key: 'coursesState',
+  default: [],
+});
+
+export const coursesSelector = selector({
+  key: 'coursesSelector',
+  get: ({ get }) => {
+    return get(coursesState);
+  },
+});

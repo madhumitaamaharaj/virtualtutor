@@ -23,12 +23,15 @@ const Sidebar = () => {
         </Link>
       </div>
       <div className={styles.button}>
-        <p>
-          <span className={styles.icon} style={iconStyle}>
-            <MdSpaceDashboard />
-          </span>
-          <strong style={iconStyle}>Dashboard</strong>
-        </p>
+      <Link to="/dashboard" className={styles.linkunderline}>
+      <p>
+        <span className={styles.icon} style={iconStyle}>
+          <MdSpaceDashboard />
+        </span>
+        <strong style={iconStyle}>Dashboard</strong>
+      </p>
+    </Link>
+    
       </div>
       <div className={styles.button}>
         <p>

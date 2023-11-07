@@ -34,7 +34,9 @@ function App() {
               </CourseDetailsLayout>
             }
           />
-          <Route path="/dashboard" element={<StudentDashboard />} />
+          <Route path="/dashboard" element={ <CourseDetailsLayout>
+            <StudentDashboard />
+            </CourseDetailsLayout>} />
         </Routes>
       </Router>
       <ToastContainer />
