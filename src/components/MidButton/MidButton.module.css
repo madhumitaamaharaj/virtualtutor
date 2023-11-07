@@ -1,7 +1,11 @@
 .buttonContainer {
+  display: flex;
+  justify-content: center; 
   position: sticky;
   top: 80px;
-  background-color: white; 
+ width:85%;
+ left:185px;
+  background-color: white;
   z-index: 1;
 }
 

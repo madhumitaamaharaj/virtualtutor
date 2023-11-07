@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useRecoilValue } from 'recoil'; 
 import {  categoryState,searchFilterState } from '../../../recoil/searchFilter';
+import { Link } from 'react-router-dom';
 import styles from './CourseList.module.css'; 
 
 const CourseList = () => {
@@ -118,7 +119,9 @@ const CourseList = () => {
               <Card.Body>
                 <Card.Title className={styles['card-title']}>{course.title}</Card.Title>
                 <Card.Text className={styles['card-text']}>{course.instructor}</Card.Text>
-                <button className={`btn ${styles['enroll-button']}`}>Enroll Now</button>
+                <Link to={`/course/${index}`} className={`btn ${styles['view-button']}`}>
+                  View
+                </Link>
               </Card.Body>
             </Card>
           </Col>

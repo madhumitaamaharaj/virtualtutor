@@ -35,8 +35,10 @@
 }
 .recommended-text {
   color: #8b1f8b;
-  margin-top: 60px; 
+  margin-top: 1rem; 
+  text-align: center; 
 }
+
 
 .btn-primary {
   background-color: #8b1f8b;
@@ -47,7 +49,7 @@
 }
 
 
-.enroll-button {
+.view-button {
   background-color: #8b1f8b;
   color: white;
   font-weight: bold;

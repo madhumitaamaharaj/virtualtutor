@@ -1,20 +1,39 @@
 import React from 'react';
-import { RecoilRoot } from 'recoil'; 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
 import Head from './components/Head/Head';
 import Sidebar from './components/Sidebar/Sidebar';
 import MidButton from './components/MidButton/MidButton';
 import CourseList from './components/CourseContainer/CourseList/CourseList';
+import CourseDetails from './components/CourseContainer/CourseDetails/CourseDetails'; 
+import HomeLayout from './HomeLayout'; 
+import CourseDetailsLayout from './CourseDetailsLayout';
 import './App.css';
 
 function App() {
   return (
-    <RecoilRoot> 
-      <div className="App">
-        <Head />
-        <MidButton />
-        <Sidebar />
-        <CourseList />
-      </div>
+    <RecoilRoot>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <HomeLayout>
+              <MidButton />
+              <CourseList />
+              </HomeLayout>
+            }
+          />
+          <Route
+            path="/course/:id"
+            element={
+              <CourseDetailsLayout>
+                <CourseDetails />
+              </CourseDetailsLayout>
+            }
+          />
+        </Routes>
+      </Router>
     </RecoilRoot>
   );
 }
