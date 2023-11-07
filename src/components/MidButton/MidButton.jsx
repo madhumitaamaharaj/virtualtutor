@@ -7,9 +7,9 @@ const MidButton = () => {
 
   return (
     <div className={styles.buttonContainer}>
-      {buttonTitles.map((title, index) => (
+      {buttonTitles.map((i, index) => (
         <button key={index} className={`${styles.button} m-2`}>
-          {title}
+          {i}
         </button>
       ))}
     </div>

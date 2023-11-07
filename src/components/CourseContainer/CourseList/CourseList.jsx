@@ -9,79 +9,92 @@ const CourseList = () => {
 
   const courses = [
     {
-      title: 'Course 1',
-      description: 'Description for Course 1',
+      title: 'Stock Market Analysis',
+      instructor: 'Dr.Vivek Dutta',
+     
       imageUrl: 'https://tradeor.com/wp-content/uploads/2021/08/Stock-Market-Analysis.png',
       
     },
     {
-      title: 'Course 2',
-      description: 'Description for Course 2',
+      title: 'Java',
+      instructor: 'Jahnvi Saha',
+   
       imageUrl: 'https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.jpg',
   
     },
     {
-      title: 'Course 3',
-      description: 'Description for Course 3',
+      title: 'Python',
+      instructor: 'Shreela Roy',
+      
       imageUrl: 'https://miro.medium.com/v2/resize:fit:1200/1*ycIMlwgwicqlO6PcFRA-Iw.png',
       
     },
     {
-      title: 'Course 1',
-      description: 'Description for Course 1',
+      title: 'C++',
+      instructor: 'Priya Biswas',
+      
       imageUrl: 'https://fossa.com/blog/content/images/2022/03/CC--.png',
       
     },
     {
-      title: 'Course 2',
-      description: 'Description for Course 2',
+      title: 'Odissi Dance',
+      instructor: 'Madhumita Chaudhuri',
+
       imageUrl: 'https://www.zigya.com/blog/wp-content/uploads/Odissi-Dance.jpg',
       
     },
     {
-      title: 'Course 3',
-      description: 'Description for Course 3',
+      title: 'Kathak Dance',
+      instructor: 'Madhumita Chaudhuri',
+    
       imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/00/Kathak_Performance.jpg',
       
     },
     {
-      title: 'Course 1',
-      description: 'Description for Course 1',
+      title: 'Bharatnatyam Dance',
+      instructor: 'Madhumita Chaudhuri',
+      
       imageUrl: 'https://www.drishtiias.com/images/uploads/1583477683_image1.jpg',
     
     },
     {
-      title: 'Course 2',
-      description: 'Description for Course 2',
+      title: 'UI - UX Design' ,
+      instructor: 'Madhumita Chaudhuri',
+  
       imageUrl: 'https://graffersid.com/wp-content/uploads/2020/02/ux-ui-1024x529.png',
       
     },
     {
-      title: 'Course 3',
-      description: 'Description for Course 3',
+      title: 'Textile Design',
+      instructor: 'Madhumita Chaudhuri',
+     
       imageUrl: 'https://www.textileblog.com/wp-content/uploads/2022/04/textile-designing.jpeg',
       
     },
     {
-      title: 'Course 1',
-      description: 'Description for Course 1',
+      title: 'MERN Stack',
+      instructor: 'Madhumita Chaudhuri',
+      
       imageUrl: 'https://www.bigscal.com/wp-content/uploads/2022/09/Features-of-Mern-stack-development-services-You-Should-Know.png',
       
     },
     {
-      title: 'Course 2',
-      description: 'Description for Course 2',
+      title: 'Kotlin',
+      instructor: 'Disha Majumder',
+     
       imageUrl: 'https://www.blognone.com/sites/default/files/externals/2a4508db1297d53528aafe2d8a6226ce.jpeg',
     },
     {
-      title: 'Course 3',
-      description: 'Description for Course 3',
+      title: 'Digital Marketing',
+      instructor: 'Juhi Kumari',
+      
       imageUrl: 'https://www.springboard.com/blog/wp-content/uploads/2022/06/what-is-digital-marketing.png',
      
     },
     {
-      title: 'Course 1',
-      description: 'Description for Course 1',
+      title: 'Data Science',
+      instructor: 'Tiyasha Hore',
+     
       imageUrl: 'https://d1m75rqqgidzqn.cloudfront.net/wp-data/2019/09/11134058/What-is-data-science-2.jpg',
     
     },
@@ -109,7 +122,7 @@ const CourseList = () => {
                         {courses[row * 3 + col].title}
                       </Card.Title>
                       <Card.Text className={styles['card-text']}>
-                        {courses[row * 3 + col].description}
+                        {courses[row * 3 + col].instructor}
                       </Card.Text>
                       <button
                         className={`btn ${styles['enroll-button']}`}
