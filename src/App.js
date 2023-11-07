@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import { RecoilRoot } from 'recoil';
 import Head from './components/Head/Head';
 import Sidebar from './components/Sidebar/Sidebar';
@@ -8,6 +9,7 @@ import CourseList from './components/CourseContainer/CourseList/CourseList';
 import CourseDetails from './components/CourseContainer/CourseDetails/CourseDetails';
 import HomeLayout from './HomeLayout';
 import CourseDetailsLayout from './CourseDetailsLayout';
+import StudentDashboard from './components/StudentDashboard/StudentDashboard';
 import './App.css';
 
 function App() {
@@ -32,8 +34,10 @@ function App() {
               </CourseDetailsLayout>
             }
           />
+          <Route path="/dashboard" element={<StudentDashboard />} />
         </Routes>
       </Router>
+      <ToastContainer />
     </RecoilRoot>
   );
 }
