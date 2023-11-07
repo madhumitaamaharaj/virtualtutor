@@ -1,62 +1,61 @@
-
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-  
-  }
-  
-  .card {
-    width: 18rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 10rem; 
-  }
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .card-title {
-    font-weight: bold;
-    color: #8b1f8b;
-  }
-  .card-img {
-    flex: 1; 
-    object-fit: cover; 
-    height: 200px; 
-   
-  }
-  .card-text {
-    color: #8b1f8b;
-  }
-  .recommended-text {
-    color: #8b1f8b;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+
+}
+
+.card {
+  width: 18rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 10rem; 
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #8b1f8b;
+}
+.card-img {
+  flex: 1; 
+  object-fit: cover; 
+  height: 200px; 
+ 
+}
+.card-text {
+  color: #8b1f8b;
+}
+.recommended-text {
+  color: #8b1f8b;
+  margin-top: 60px; 
+}
+
 .btn-primary {
-    background-color: #8b1f8b;
-    color: white;
-    width: 100%;
-    font-weight: bold;
-    transition: background-color 0.3s; 
-  }
+  background-color: #8b1f8b;
+  color: white;
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.3s; 
+}
+
+
+.enroll-button {
+  background-color: #8b1f8b;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s; 
   
 
-  .enroll-button {
-    background-color: #8b1f8b;
-    color: white;
-    font-weight: bold;
-    transition: background-color 0.3s; 
-    
-  
-    &:hover {
-      background-color: #8b1f8b; 
-      color: #fff;
-    }
+  &:hover {
+    background-color: #8b1f8b; 
+    color: #fff;
   }
- 
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -89,7 +89,7 @@ const CourseList = () => {
   ];
 
   return (
-    <Container>
+    <Container style={{ marginTop: '80px' }}>
       <h1 className={`mt-3 ${styles['recommended-text']}`}>Recommended Courses</h1>
       <Row className={`justify-content-end ${styles['course-row']}`}>
         {Array.from({ length: 6 }, (_, row) => (

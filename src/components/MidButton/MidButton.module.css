@@ -1,3 +1,9 @@
+.buttonContainer {
+  position: sticky;
+  top: 80px;
+  background-color: white; 
+  z-index: 1;
+}
 
 .button {
   background-color: #f8d7f8;
@@ -5,7 +11,6 @@
   transition: background-color 0.3s;
   border-radius: 10px;
   font-weight: bold;
-  margin-right: 10px;
   padding: 10px;
 }
 
@@ -14,19 +19,17 @@
   color: white;
 }
 
-
 @media (max-width: 768px) {
   .button {
-    padding: 5px; 
-    margin-left: 2px; 
+    padding: 5px;
+    margin-left: 2px;
   }
 }
 
-
 @media (max-width: 576px) {
   .button {
-    padding: 3px; 
-    margin-left: 2px; 
-    font-size: 14px; 
+    padding: 3px;
+    margin-left: 2px;
+    font-size: 14px;
   }
 }
