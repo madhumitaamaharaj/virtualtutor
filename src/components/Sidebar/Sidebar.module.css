@@ -33,7 +33,9 @@
 .icon {
   margin-right: 10px;
 }
-
+.linkunderline {
+  text-decoration: none;
+}
 
 @media (max-width: 768px) {
   .sidebar {
