@@ -4,7 +4,7 @@ import { BsBell } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaSearch } from 'react-icons/fa';
 import { useRecoilState } from 'recoil';
-import { searchFilterState } from '../../recoil/searchFilter'; 
+import { searchFilterState } from '../../recoil/atom';
 import styles from './Head.module.css';
 
 const Head = () => {
@@ -18,7 +18,7 @@ const Head = () => {
     const newSearchFilter = e.target.value;
     setSearchFilter(newSearchFilter);
 
-   
+
   };
   return (
     <div className={styles.headContainer}>

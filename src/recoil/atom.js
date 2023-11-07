@@ -6,6 +6,10 @@ export const searchFilterState = atom({
 });
 
 export const categoryState = atom({
-    key: 'categoryState',
-    default: 'All', 
-  });
+  key: 'categoryState',
+  default: 'All',
+});
+export const syllabusOpenState = atom({
+  key: 'syllabusOpenState',
+  default: false,
+});

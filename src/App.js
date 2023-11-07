@@ -5,8 +5,8 @@ import Head from './components/Head/Head';
 import Sidebar from './components/Sidebar/Sidebar';
 import MidButton from './components/MidButton/MidButton';
 import CourseList from './components/CourseContainer/CourseList/CourseList';
-import CourseDetails from './components/CourseContainer/CourseDetails/CourseDetails'; 
-import HomeLayout from './HomeLayout'; 
+import CourseDetails from './components/CourseContainer/CourseDetails/CourseDetails';
+import HomeLayout from './HomeLayout';
 import CourseDetailsLayout from './CourseDetailsLayout';
 import './App.css';
 
@@ -19,8 +19,8 @@ function App() {
             path="/"
             element={
               <HomeLayout>
-              <MidButton />
-              <CourseList />
+                <MidButton />
+                <CourseList />
               </HomeLayout>
             }
           />

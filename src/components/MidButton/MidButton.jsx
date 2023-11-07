@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRecoilState } from 'recoil';
-import { categoryState } from '../../recoil/searchFilter';
+import { categoryState } from '../../recoil/atom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './MidButton.module.css';
 

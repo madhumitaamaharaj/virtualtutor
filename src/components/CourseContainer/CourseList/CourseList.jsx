@@ -3,21 +3,21 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { useRecoilValue } from 'recoil'; 
-import { categoryState, searchFilterState } from '../../../recoil/searchFilter';
+import { useRecoilValue } from 'recoil';
+import { categoryState, searchFilterState } from '../../../recoil/atom';
 import { Link } from 'react-router-dom';
 import styles from './CourseList.module.css';
-import courses from '../../../data/coursedata'; 
+import courses from '../../../data/coursedata';
 
 const CourseList = () => {
-  const searchFilter = useRecoilValue(searchFilterState); 
+  const searchFilter = useRecoilValue(searchFilterState);
   const selectedCategory = useRecoilValue(categoryState);
 
   const filteredCourses = courses.filter((course) => {
     const title = course.title || '';
     const instructor = course.instructor || '';
     return (
-      (selectedCategory === 'All' || course.category === selectedCategory) && 
+      (selectedCategory === 'All' || course.category === selectedCategory) &&
       (title.toLowerCase().includes(searchFilter.toLowerCase()) ||
         instructor.toLowerCase().includes(searchFilter.toLowerCase()))
     );
@@ -39,9 +39,10 @@ const CourseList = () => {
               <Card.Body>
                 <Card.Title className={styles['card-title']}>{course.title}</Card.Title>
                 <Card.Text className={styles['card-text']}>{course.instructor}</Card.Text>
-                <Link to={`/course/${index}`} className={`btn ${styles['view-button']}`}>
+                <Link to={`/course/${course.id}`} className={`btn ${styles['view-button']}`}>
                   View
                 </Link>
+
               </Card.Body>
             </Card>
           </Col>
