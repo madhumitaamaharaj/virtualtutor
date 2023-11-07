@@ -18,7 +18,7 @@ const Head = () => {
     const newSearchFilter = e.target.value;
     setSearchFilter(newSearchFilter);
 
-    console.log('Updated searchFilter:', newSearchFilter);
+   
   };
   return (
     <div className={styles.headContainer}>
