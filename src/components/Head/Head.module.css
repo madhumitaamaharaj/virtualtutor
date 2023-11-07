@@ -4,7 +4,14 @@
     align-items: center;
     padding: 1rem;
     background-color: #fcfcfc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fcfcfc;
+    z-index: 1; 
   }
+ 
   
   .icon {
     font-size: 24px;
