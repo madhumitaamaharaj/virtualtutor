@@ -13,9 +13,8 @@ React Js, Bootstrap (UI), React Icon (Icon),Recoil (Global State Management Libr
 
 ## Installation
 To run the Virtual Tutor Project locally, follow these steps:
-
-Clone the repository: git clone https://github.com/madhumitaamaharaj/virtualtutor.git
-then open the folder
+Create a folder on PC /Laptop then Clone the repository using command: git clone https://github.com/madhumitaamaharaj/virtualtutor.git
+then open the folder -> virtualtutor
 then Switch the branch with command -> git checkout virtualtutor 
 
 To view the Virtual Tutor Project, Install node modules- write command -> npm i then npm start
