@@ -64,9 +64,9 @@ const StudentDashboard = () => {
             <ProgressBar
               now={isCourseCompleted ? 100 : 0}
               label={`${isCourseCompleted ? '100%' : '0%'}`}
-              variant={isCourseCompleted ? 'bg-success' : 'info'}
+              variant={isCourseCompleted ? 'success' : 'info'}
               style={{
-                width: '20%', 
+                width: '30%', 
               }}
             />
             </div>
