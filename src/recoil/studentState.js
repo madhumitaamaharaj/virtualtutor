@@ -1,24 +1,26 @@
-import { atom, selector } from 'recoil';
+
+import { atom , selector } from 'recoil';
 
 export const enrolledStudentsState = atom({
   key: 'enrolledStudentsState',
   default: [],
 });
 
-export const enrolledStudentsSelector = selector({
-  key: 'enrolledStudentsSelector',
-  get: ({ get }) => {
-    return get(enrolledStudentsState);
-  },
-});
 export const coursesState = atom({
   key: 'coursesState',
   default: [],
 });
-
-export const coursesSelector = selector({
-  key: 'coursesSelector',
+export const courseProgressSelector = selector({
+  key: 'courseProgressSelector',
   get: ({ get }) => {
-    return get(coursesState);
+    const courses = get(coursesState);
+    return courses.map((course) => course.completed);
+  },
+  set: ({ set }, newProgress, courseId) => {
+    set(coursesState, (courses) =>
+      courses.map((course) =>
+        course.id === courseId ? { ...course, completed: newProgress } : course
+      )
+    );
   },
 });

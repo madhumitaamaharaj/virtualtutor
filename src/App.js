@@ -10,6 +10,7 @@ import CourseDetails from './components/CourseContainer/CourseDetails/CourseDeta
 import HomeLayout from './HomeLayout';
 import CourseDetailsLayout from './CourseDetailsLayout';
 import StudentDashboard from './components/StudentDashboard/StudentDashboard';
+import DashboardLayout from './components/DashboardLayout/DashboardLayout';
 import './App.css';
 
 function App() {
@@ -34,9 +35,7 @@ function App() {
               </CourseDetailsLayout>
             }
           />
-          <Route path="/dashboard" element={ <CourseDetailsLayout>
-            <StudentDashboard />
-            </CourseDetailsLayout>} />
+          <Route path="/dashboard" element={<DashboardLayout />} />
         </Routes>
       </Router>
       <ToastContainer />
