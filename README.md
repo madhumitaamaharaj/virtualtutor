@@ -9,7 +9,7 @@ Student Dashboard Page: 1) Dashboard  for students to display the courses they a
 3) Add a feature that allows students to mark courses as completed.
 
 ## Tech Stacks Used-
-React Js, Bootstrap (UI), React Icon (Icon),Recoil (Global State Management Library),Stored Sample Data as JSON format, use create-react-app library for creating react app named Virtual Tutor,WebPack (Bundler)
+React Js, Bootstrap (UI), React Icon (Icon),Recoil (Global State Management Library),Stored Sample Data as JSON format, use create-react-app library for creating react app named Virtual Tutor,WebPack (Bundler),Toastify Alert for Toast Message.
 
 ## Installation
 To run the Virtual Tutor Project locally, follow these steps:
