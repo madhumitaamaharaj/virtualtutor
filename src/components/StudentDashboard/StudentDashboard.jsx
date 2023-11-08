@@ -3,6 +3,7 @@ import { useRecoilValue, useRecoilState } from 'recoil';
 import { enrolledStudentsState, coursesState, courseCompletionState } from '../../recoil/studentState';
 import coursedata from '../../data/coursedata';
 import styles from './StudentDashboard.module.css';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const StudentDashboard = () => {
   const enrolledStudents = useRecoilValue(enrolledStudentsState);
@@ -16,7 +17,6 @@ const StudentDashboard = () => {
 
     setCourses(updatedCourses);
 
-   
     setCourseCompletion({
       ...courseCompletion,
       [courseId]: true,
@@ -30,9 +30,8 @@ const StudentDashboard = () => {
         const course = coursedata.find((c) => c.id === enrollment.courseId);
         const isCourseCompleted = courseCompletion[course.id];
 
-        const progressBarFillStyle = {
+        const progressBarStyle = {
           width: isCourseCompleted ? '100%' : '0',
-          backgroundColor: isCourseCompleted ? styles.completed : styles.defaultColor,
         };
 
         const courseImageStyle = {
@@ -50,11 +49,28 @@ const StudentDashboard = () => {
             />
             <p>Instructor: {course.instructor}</p>
             <p>Due Date: {course.schedule}</p>
-            <p>Progress: {isCourseCompleted ? 'Completed' : 'In Progress'}</p>
-
-            <div className={styles.progressBar}>
-              <div className={styles.progressBarFill} style={progressBarFillStyle}></div>
+            <p>
+              Progress: {isCourseCompleted ? 'Completed' : 'In Progress'}
+            </p>
+            <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginBottom:'15px',
+             
+            }}
+          >
+            <ProgressBar
+              now={isCourseCompleted ? 100 : 0}
+              label={`${isCourseCompleted ? '100%' : '0%'}`}
+              variant={isCourseCompleted ? 'bg-success' : 'info'}
+              style={{
+                width: '20%', 
+              }}
+            />
             </div>
+
             <button
               onClick={() => markCourseCompleted(course.id)}
               style={{
